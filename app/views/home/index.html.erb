@@ -1,0 +1,21 @@
+<div>
+	<div class="row">
+		<div class="col s12">
+			<div id="sidebar" class="col s2">
+				<div class="col s12 card" id="sidebar-content">
+				</div>
+			</div>
+
+
+			<div class="col s10" data-controller="hello">
+				<input data-target="hello.name" type="text">
+				<button data-action="click->hello#greet">Greet</button>
+			</div>
+
+			<div class="col s10" data-controller="clipboard">
+  			PIN: <input data-target="clipboard.source" type="text" value="1234" readonly>
+ 			  <button class="clipboard-button" data-action="clipboard#copy">Copy to Clipboard</button>
+			</div>
+		</div>
+	</div>
+</div>
